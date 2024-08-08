@@ -1,0 +1,9 @@
+# ide/editor specific files
+.idea/
+.DS_Store
+
+# test files
+.coverage
+htmlcov/
+
+
