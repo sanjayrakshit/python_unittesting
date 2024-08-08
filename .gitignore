@@ -7,3 +7,5 @@
 htmlcov/
 
 
+__pycache__/
+
