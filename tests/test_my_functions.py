@@ -15,8 +15,8 @@ def test_divide():
 
 
 def test_divide_zero_division():
-    with pytest.raises(ZeroDivisionError) as zde:
-        res = my_functions.divide(1, 0)
+    with pytest.raises(ZeroDivisionError):
+        my_functions.divide(1, 0)
 
 
 def test_multiple():
@@ -29,3 +29,13 @@ def test_very_slow():
     time.sleep(5)
     res = my_functions.divide(6, 2)
     assert res == 3
+
+
+@pytest.mark.skip(reason="This is broken right now")
+def test_add_broken():
+    assert 'ab' == my_functions.add('a', 'b')
+
+
+@pytest.mark.xfail(reason='This feature is not handled')
+def test_divide_by_zero():
+    my_functions.divide(10, 0)
