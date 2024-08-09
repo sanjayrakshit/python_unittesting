@@ -1,4 +1,3 @@
-import pytest
 import math
 import src.shapes as shapes
 

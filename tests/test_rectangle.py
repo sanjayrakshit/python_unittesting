@@ -1,5 +1,3 @@
-import pytest
-import src.shapes as shapes
 
 
 def test_area(rectangle):
