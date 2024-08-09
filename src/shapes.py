@@ -1,5 +1,6 @@
 import math
 
+
 class Shape:
 
     def area(self):
@@ -40,4 +41,3 @@ class Rectangle(Shape):
 class Square(Rectangle):
     def __init__(self, side):
         super().__init__(side, side)
-

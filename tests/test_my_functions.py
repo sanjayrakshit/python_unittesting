@@ -33,9 +33,9 @@ def test_very_slow():
 
 @pytest.mark.skip(reason="This is broken right now")
 def test_add_broken():
-    assert 'ab' == my_functions.add('a', 'b')
+    assert "ab" == my_functions.add("a", "b")
 
 
-@pytest.mark.xfail(reason='This feature is not handled')
+@pytest.mark.xfail(reason="This feature is not handled")
 def test_divide_by_zero():
     my_functions.divide(10, 0)
