@@ -8,4 +8,5 @@ htmlcov/
 
 
 **/__pycache__/
+*.pyc
 
